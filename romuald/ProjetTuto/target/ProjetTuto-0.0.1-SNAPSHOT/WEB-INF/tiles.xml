@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?> <!DOCTYPE tiles-definitions PUBLIC         "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"         "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+	<definition name="listeJoueurs" template="/view/pageJoueur.jsp">
+		<put-attribute name="principal"
+			value="/view/listeJoueurs.jsp" />
+	</definition>
+	<definition name="creationJoueurs" template="/view/pageJoueur.jsp">
+		<put-attribute name="principal"
+			value="/view/creationJoueur.jsp" />
+	</definition>
+	<definition name="suppressionJoueurs" template="/view/pageJoueur.jsp">
+		<put-attribute name="principal"
+			value="/view/suppressionJoueur.jsp" />
+	</definition>
+	<definition name="modificationJoueurs" template="/view/pageJoueur.jsp">
+		<put-attribute name="principal"
+			value="/view/modificationJoueur.jsp" />
+	</definition>
+</tiles-definitions>

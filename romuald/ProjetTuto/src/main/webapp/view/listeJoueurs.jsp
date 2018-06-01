@@ -20,7 +20,7 @@
 		<thead>
 			<tr>
 				<th><spring:message code="colonne.identifiant" /></th>
-				<th><spring:message code="colonne.nom" /></th>
+				<th><spring:message code="colonne.pseudo" /></th>
 			</tr>
 		</thead>
 		<tbody>
@@ -32,5 +32,3 @@
 			</c:forEach>
 		</tbody>
 	</table>
-</body>
-</html>

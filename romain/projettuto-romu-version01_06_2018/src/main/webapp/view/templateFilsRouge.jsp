@@ -16,10 +16,10 @@
         <!-- Chargement des css Bootstrap -->
          <link href="<c:url value="/resources/bootstrap/css/bootstrap.min.css" />" rel="stylesheet">
         <!-- Chargement des feuilles theme css bootstrap aprais les css Bootstrap principal-->
-         <link href="<c:url value="/resources/bootstraptheme/theme.min.css" />" rel="stylesheet">
+         <link href="<c:url value="/resources/bootstraptheme/theme.min.2.css" />" rel="stylesheet">
         <!-- Chargement de mes feuilles css -->
         <!-- On charge toujour notre css pour surcharger les précédent -->
-        <link rel="stylesheet" media="all" type="text/css" href="<c:url value="/resources/css/template.css" />" /> <!-- -->
+        <link rel="stylesheet" media="all" type="text/css" href="<c:url value="/resources/css/template.2.css" />" /> <!-- -->
         <!-- Le chargement du javascript peut bloquer la page ,à besin de jquery pour fonctionner-->
         <!--  -->
          <script src="<c:url value="/resources/js/jquery-1.11.3.min.js"/>"></script>
@@ -119,17 +119,16 @@
         </div>
 
         <!-- Fin des balise de la page %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
-		<footer class="navbar navbar-inverse navbar-fixed-bottom m2i-footerbar">
+		
+        <footer class="navbar navbar-inverse navbar-fixed-bottom m2i-footerbar">
             <div>
-                <ul class="nav navbar-nav">
+                <ul class="nav navbar-nav ">
                     <li>
-                        <a href="#">Action</a>
-                    </li>
-                    <li>
-                        <p>copysddfs y</p>
-                    </li>
-                    <li>
-                        <a href="#">Action</a>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <p>copyright &#9400; 2017-2018 M2I</p>
+                            </div>
+                        </div>
                     </li>
                 </ul>
             </div>

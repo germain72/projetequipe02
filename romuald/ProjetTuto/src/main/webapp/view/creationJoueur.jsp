@@ -14,7 +14,7 @@
 <script type="text/javascript" src="<c:url value="/resources/bootstrap/js/bootstrap.min.js"/>"></script>
 <link href="<c:url value="/resources/projettuto.css" />" rel="stylesheet">
 
-<title><spring:message code="titre.creation.elementjoueurs" /></title>
+<title><spring:message code="titre.creation.elementparties" /></title>
 </head>
 <body>
 	<form:form method="post" modelAttribute="creationJoueur"
@@ -42,5 +42,4 @@
 			</c:forEach>
 		</tbody>
 	</table>
-</body>
-</html>
+

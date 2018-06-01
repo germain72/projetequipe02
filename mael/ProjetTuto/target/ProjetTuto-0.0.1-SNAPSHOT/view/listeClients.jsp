@@ -7,13 +7,13 @@
 		<table border="1">
 			<thead>
 				<tr>
-					<th><spring:message code="colonne.identifiant"/></th>
-					<th><spring:message code="colonne.libelle"/></th>
-					<th><spring:message code="colonne.quantite"/></th>
-					<th><spring:message code="colonne.identifiant"/></th>
-					<th><spring:message code="colonne.libelle"/></th>
-					<th><spring:message code="colonne.quantite"/></th>
-					<th><spring:message code="colonne.quantite"/></th>
+					<th><spring:message code="colonne.idclient"/></th>
+					<th><spring:message code="colonne.nomclient"/></th>
+					<th><spring:message code="colonne.prenomclient"/></th>
+					<th><spring:message code="colonne.naissanceclient"/></th>
+					<th><spring:message code="colonne.pseudoclient"/></th>
+					<th><spring:message code="colonne.mdpclient"/></th>
+					<th><spring:message code="colonne.admin"/></th>
 				</tr>
 			</thead>
 			<tbody>

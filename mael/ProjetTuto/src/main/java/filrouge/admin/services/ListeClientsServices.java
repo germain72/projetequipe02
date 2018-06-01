@@ -32,6 +32,14 @@ public class ListeClientsServices implements IListeClientsServices {
 	public void creerClient(final String nom, final String prenom, final Date naissance, final String pseudo, final String mdp,
 			final boolean admin) {
 		// TODO Auto-generated method stub
+		final Client lClient = new Client();
+		lClient.setNomclient(nom);
+		lClient.setPrenomclient(prenom);
+		lClient.setNaissanceclient(naissance);
+		lClient.setPseudoclient(pseudo);
+		lClient.setMdpclient(mdp);
+		lClient.setAdmin(admin);
+		dao.creerClient(lClient);
 
 	}
 

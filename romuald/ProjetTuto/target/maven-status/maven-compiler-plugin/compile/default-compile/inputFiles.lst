@@ -2,6 +2,7 @@ C:\Users\romua\OneDrive\Documents\Formation J2E - Développement Web\STS projects
 C:\Users\romua\OneDrive\Documents\Formation J2E - Développement Web\STS projects\ProjetTuto\src\main\java\filrouge\admin\DAO\IListeClientsDAO.java
 C:\Users\romua\OneDrive\Documents\Formation J2E - Développement Web\STS projects\ProjetTuto\src\main\java\filrouge\jeu\DAO\ListeJoueursDAO.java
 C:\Users\romua\OneDrive\Documents\Formation J2E - Développement Web\STS projects\ProjetTuto\src\main\java\filrouge\admin\controller\IdentifierClientController.java
+C:\Users\romua\OneDrive\Documents\Formation J2E - Développement Web\STS projects\ProjetTuto\src\main\java\filrouge\jeu\controller\CreerListePartiesController.java
 C:\Users\romua\OneDrive\Documents\Formation J2E - Développement Web\STS projects\ProjetTuto\src\main\java\filrouge\jeu\bean\Ressources.java
 C:\Users\romua\OneDrive\Documents\Formation J2E - Développement Web\STS projects\ProjetTuto\src\main\java\filrouge\admin\services\ListeClientsServices.java
 C:\Users\romua\OneDrive\Documents\Formation J2E - Développement Web\STS projects\ProjetTuto\src\main\java\filrouge\jeu\controller\ModificationJoueur.java
@@ -14,12 +15,18 @@ C:\Users\romua\OneDrive\Documents\Formation J2E - Développement Web\STS projects
 C:\Users\romua\OneDrive\Documents\Formation J2E - Développement Web\STS projects\ProjetTuto\src\main\java\filrouge\admin\bean\Commandes.java
 C:\Users\romua\OneDrive\Documents\Formation J2E - Développement Web\STS projects\ProjetTuto\src\main\java\filrouge\jeu\services\ServiceListeJoueurs.java
 C:\Users\romua\OneDrive\Documents\Formation J2E - Développement Web\STS projects\ProjetTuto\src\main\java\filrouge\jeu\controller\ModificationFormJoueur.java
+C:\Users\romua\OneDrive\Documents\Formation J2E - Développement Web\STS projects\ProjetTuto\src\main\java\filrouge\jeu\services\IServiceListeParties.java
 C:\Users\romua\OneDrive\Documents\Formation J2E - Développement Web\STS projects\ProjetTuto\src\main\java\filrouge\jeu\DAO\IListeJoueursDAO.java
 C:\Users\romua\OneDrive\Documents\Formation J2E - Développement Web\STS projects\ProjetTuto\src\main\java\filrouge\admin\services\IListeClientsServices.java
+C:\Users\romua\OneDrive\Documents\Formation J2E - Développement Web\STS projects\ProjetTuto\src\main\java\filrouge\jeu\controller\AfficherListePartiesController.java
 C:\Users\romua\OneDrive\Documents\Formation J2E - Développement Web\STS projects\ProjetTuto\src\main\java\filrouge\jeu\controller\CreationFormJoueur.java
+C:\Users\romua\OneDrive\Documents\Formation J2E - Développement Web\STS projects\ProjetTuto\src\main\java\filrouge\jeu\controller\CreationFormPartie.java
+C:\Users\romua\OneDrive\Documents\Formation J2E - Développement Web\STS projects\ProjetTuto\src\main\java\filrouge\jeu\services\ServiceListeParties.java
 C:\Users\romua\OneDrive\Documents\Formation J2E - Développement Web\STS projects\ProjetTuto\src\main\java\filrouge\admin\bean\Client.java
 C:\Users\romua\OneDrive\Documents\Formation J2E - Développement Web\STS projects\ProjetTuto\src\main\java\filrouge\jeu\bean\Joueur.java
 C:\Users\romua\OneDrive\Documents\Formation J2E - Développement Web\STS projects\ProjetTuto\src\main\java\filrouge\jeu\controller\AfficherListeJoueursController.java
+C:\Users\romua\OneDrive\Documents\Formation J2E - Développement Web\STS projects\ProjetTuto\src\main\java\filrouge\jeu\DAO\IListePartiesDAO.java
+C:\Users\romua\OneDrive\Documents\Formation J2E - Développement Web\STS projects\ProjetTuto\src\main\java\filrouge\jeu\DAO\ListePartiesDAO.java
 C:\Users\romua\OneDrive\Documents\Formation J2E - Développement Web\STS projects\ProjetTuto\src\main\java\filrouge\jeu\services\IServiceListeJoueurs.java
 C:\Users\romua\OneDrive\Documents\Formation J2E - Développement Web\STS projects\ProjetTuto\src\main\java\filrouge\jeu\bean\RelationJoueur.java
 C:\Users\romua\OneDrive\Documents\Formation J2E - Développement Web\STS projects\ProjetTuto\src\main\java\filrouge\jeu\bean\Partie.java

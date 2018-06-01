@@ -13,4 +13,5 @@ public interface IListeJoueursDAO {
 	void supprimerJoueur(final Joueur pJoueur);
 	
 	void modifierJoueur(final Joueur pJoueur);
+	
 }

@@ -58,6 +58,7 @@ public class ListeClientsDAO implements IListeClientsDAO {
 
 	public void creerClient(Client client) {
 		// TODO Auto-generated method stub
+		entityManager.persist(client);
 	}
 
 	public void modifierClient(final Client client) {

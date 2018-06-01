@@ -7,7 +7,18 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-        <title><spring:message code="titre.application"/></title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+		<script type="text/javascript" src="<c:url value="/resources/bootstrap/js/bootstrap.min.js"/>"></script>
+        <script type="text/javascript" src="<c:url value="/resources/bootstrap/js/jquery.min.js"/>"></script>
+        <link href="<c:url value="/resources/bootstrap/css/bootstrap.min.css" />" rel="stylesheet">
+        <link href="<c:url value="/resources/bootstrap/css/bootstrap-theme.min.css" />" rel="stylesheet">
+        
+        <link href="<c:url value="/resources/css/style.css" />" rel="stylesheet">
+        
+		<script src="<c:url value="/resources/bootstrap/js/bootstrap-datepicker.min.js"/>"></script>
+        <link href="<c:url value="/resources/bootstrap/css/datepicker.min.css"/>" rel="stylesheet" />
+		<link href="<c:url value="/resources/bootstrap/css/datepicker3.min.css"/>" rel="stylesheet" />
+        <title><spring:message code="titre.projettuto"/></title>
     </head>
     <body>
         <table>
@@ -19,7 +30,13 @@
                                 <tr><td>
                                     <c:url value="/afficherListeClients" var="url" />
                                     <a href="${url}">
-                                        <spring:message code="titre.listecourses"/>
+                                        <spring:message code="titre.listeclients"/>
+                                    </a>
+                                </td></tr>
+                                <tr><td>
+                                    <c:url value="/afficherCreationListeClients" var="url" />
+                                    <a href="${url}">
+                                        <spring:message code="titre.creerClients"/>
                                     </a>
                                 </td></tr>
                             <!--
