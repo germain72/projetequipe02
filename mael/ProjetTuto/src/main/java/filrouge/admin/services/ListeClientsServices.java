@@ -24,13 +24,12 @@ public class ListeClientsServices implements IListeClientsServices {
 	@Transactional
 	public boolean identifierClient(String pseudo, String mdp, boolean admin) {
 		// TODO Auto-generated method stub
-		
 		return dao.identifierClient(pseudo, mdp, admin);
 	}
 
 	@Transactional
-	public void creerClient(final String nom, final String prenom, final Date naissance, final String pseudo, final String mdp,
-			final boolean admin) {
+	public void creerClient(final String nom, final String prenom, final Date naissance,
+			 final String pseudo, final String mdp, final boolean admin) {
 		// TODO Auto-generated method stub
 		final Client lClient = new Client();
 		lClient.setNomclient(nom);
@@ -40,19 +39,19 @@ public class ListeClientsServices implements IListeClientsServices {
 		lClient.setMdpclient(mdp);
 		lClient.setAdmin(admin);
 		dao.creerClient(lClient);
-
 	}
 
 	@Transactional
-	public void modifierClient() {
+	public void modifierClient(final List<Client> listeClients) {
 		// TODO Auto-generated method stub
-
 	}
 
 	@Transactional
-	public void supprimerClient() {
+	public void supprimerClient(final Integer idClient) {
 		// TODO Auto-generated method stub
-
+		final Client lClient = new Client();
+		lClient.setIdclient(idClient);
+		dao.supprimerClient(lClient);
 	}
 
 }

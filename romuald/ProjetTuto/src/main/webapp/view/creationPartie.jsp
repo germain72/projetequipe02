@@ -14,17 +14,22 @@
 <script type="text/javascript" src="<c:url value="/resources/bootstrap/js/bootstrap.min.js"/>"></script>
 <link href="<c:url value="/resources/projettuto.css" />" rel="stylesheet">
 
-<title><spring:message code="titre.creation.elementjoueurs" /></title>
+<title><spring:message code="titre.creation.elementparties" /></title>
 </head>
 <body>
-	<form:form method="post" modelAttribute="creationPartie"
-		action="creerCreationListeParties">
+	<form:form method="post" modelAttribute="creationPartie" action="creerCreationListeParties">
+		
 		<spring:message code="creation.elementparties.nom.nom" />
 		<form:input path="nom" />
 		<b><i><form:errors path="nom" cssclass="error" /></i></b>
-		<br>
+		<br/>
+		<spring:message code="creation.elementparties.date.date" />
+		<form:input path="date" />
+		<br/>
+		<b><i><form:errors path="date" cssclass="error" /></i></b>	
 		<br>
 		<input type="submit" />
+		
 	</form:form>
 	<table border="1">
 		<thead>

@@ -7,6 +7,7 @@ public class CreationFormJoueur {
 	@NotEmpty
 	private String nom;
 	
+	
 	public String getNom() {
 		return nom;
 	}

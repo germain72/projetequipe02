@@ -32,8 +32,7 @@ public class Partie  implements java.io.Serializable {
     public Partie() {
     }
 
-	
-    public Partie(String nom, Date date) {
+	public Partie(String nom, Date date) {
         this.nom = nom;
         this.date = date;
     }

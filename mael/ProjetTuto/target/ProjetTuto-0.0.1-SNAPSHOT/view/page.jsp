@@ -12,9 +12,11 @@
         <script type="text/javascript" src="<c:url value="/resources/bootstrap/js/jquery.min.js"/>"></script>
         <link href="<c:url value="/resources/bootstrap/css/bootstrap.min.css" />" rel="stylesheet">
         <link href="<c:url value="/resources/bootstrap/css/bootstrap-theme.min.css" />" rel="stylesheet">
-        
+
+        <link href="<c:url value="/resources/css/bootstrap-theme.min.css" />" rel="stylesheet">
+
         <link href="<c:url value="/resources/css/style.css" />" rel="stylesheet">
-        
+
 		<script src="<c:url value="/resources/bootstrap/js/bootstrap-datepicker.min.js"/>"></script>
         <link href="<c:url value="/resources/bootstrap/css/datepicker.min.css"/>" rel="stylesheet" />
 		<link href="<c:url value="/resources/bootstrap/css/datepicker3.min.css"/>" rel="stylesheet" />
@@ -37,6 +39,12 @@
                                     <c:url value="/afficherCreationListeClients" var="url" />
                                     <a href="${url}">
                                         <spring:message code="titre.creerClients"/>
+                                    </a>
+                                </td></tr>
+                                <tr><td>
+                                    <c:url value="/afficherSuppressionListeClients" var="url" />
+                                    <a href="${url}">
+                                        <spring:message code="titre.supprimerClients"/>
                                     </a>
                                 </td></tr>
                             <!--

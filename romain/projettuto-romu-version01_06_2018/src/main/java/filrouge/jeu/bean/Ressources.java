@@ -22,7 +22,17 @@ public class Ressources  implements java.io.Serializable {
 
 
      private Integer id;
+     
+
+     /*
+      * libebelle est un titre utiliser dans le jeux
+      */
      private String libebelle;
+     
+     /*
+      * typeRessource est une énumaration des resource pour gérée le code
+      * libebelle est typeRessource sont les méme chose
+      */
      private int typeRessource;
      private Set<RelationRessource> relationRessources = new HashSet<RelationRessource>(0);
 
@@ -34,6 +44,7 @@ public class Ressources  implements java.io.Serializable {
         this.libebelle = libebelle;
         this.typeRessource = typeRessource;
     }
+    
     public Ressources(String libebelle, int typeRessource, Set<RelationRessource> relationRessources) {
        this.libebelle = libebelle;
        this.typeRessource = typeRessource;

@@ -1,16 +1,20 @@
 package filrouge.jeu.controller;
 
-import java.util.Calendar;
 import java.util.Date;
 
+import javax.validation.Valid;
+
 import org.hibernate.validator.constraints.NotEmpty;
+import org.springframework.format.annotation.DateTimeFormat;
 
 public class CreationFormPartie {
 
 	@NotEmpty
 	private String nom;
 
+	@Valid
 	@NotEmpty
+	@DateTimeFormat(pattern = "dd/MM/yyyy")
 	private Date date;
 	
 	public String getNom() {
@@ -25,8 +29,8 @@ public class CreationFormPartie {
 		nom = pNom;
 	}
 	
-	public void setDate(final Calendar pDate) {
-		Calendar pdate = Calendar.getInstance();
+	public void setDate(final Date pDate) {
+		date = pDate;
 		
 	}
 

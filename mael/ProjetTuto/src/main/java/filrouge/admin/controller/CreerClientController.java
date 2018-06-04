@@ -1,5 +1,6 @@
 package filrouge.admin.controller;
 
+import java.util.Date;
 import java.util.List;
 
 import javax.validation.Valid;
@@ -25,17 +26,19 @@ public class CreerClientController {
 		final List<Client> lListeClients = service.listeClients();
 		pModel.addAttribute("listeClients", lListeClients);
 		if (pModel.get("creerClient") == null) {
-			pModel.addAttribute("creerClient", new CreerClientForm());
+			CreerClientForm ccf = new CreerClientForm();
+			ccf.setNaissance(new Date());
+			pModel.addAttribute("creerClient", ccf);
 		}
 		return "creerClient";
 	}
 
 	@RequestMapping(value = "/creerCreationListeClients", method = RequestMethod.POST)
-	public String creer(@Valid @ModelAttribute(value = "creerClient") final CreerClientForm pCreation,
+	public String creer(@ModelAttribute(value = "creerClient") final CreerClientForm pCreation,
 			final BindingResult pBindingResult, final ModelMap pModel) {
 		if (!pBindingResult.hasErrors()) {
 			service.creerClient(pCreation.getNom(), pCreation.getPrenom(), pCreation.getNaissance(),
-					pCreation.getPseudo(), pCreation.getMdp(), pCreation.getAdmin());
+					pCreation.getPseudo(), pCreation.getMdp(), pCreation.isAdmin());
 		}
 		return afficher(pModel);
 	}

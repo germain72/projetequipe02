@@ -16,7 +16,7 @@
 	        <b><i><form:errors path="prenom" cssclass="error"/></i></b><br>
 	        
 	        <spring:message code="creerClients.naissanceclient" />
-	        <form:input path="naissance" data-provide="datepicker"/>
+	        <form:input path="naissance" data-provide="datepicker" />
 	        <b><i><form:errors path="naissance" cssclass="error"/></i></b><br>
 	        
 	        <spring:message code="creerClients.pseudoclient" />

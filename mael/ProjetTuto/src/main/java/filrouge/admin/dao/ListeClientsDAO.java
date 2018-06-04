@@ -27,30 +27,30 @@ public class ListeClientsDAO implements IListeClientsDAO {
 		return lTypedQuery.getResultList();
 	}
 
-	// Test avec IdentifierClientController et bonjour.jsp
+	// Test avec IdentifierClientController et test.jsp
 	public boolean identifierClient(String pseudo, String mdp, boolean admin) {
 		// TODO Auto-generated method stub
 		final CriteriaBuilder lCriteriaBuilder = entityManager.getCriteriaBuilder();
-		// 
-		final CriteriaQuery<Long> lCriteriaQuery = 
-				lCriteriaBuilder.createQuery(Long.class);
-		
+		//
+		final CriteriaQuery<Long> lCriteriaQuery = lCriteriaBuilder.createQuery(Long.class);
+
 		final Root<Client> lRoot = lCriteriaQuery.from(Client.class);
 		lCriteriaQuery.select(lCriteriaBuilder.count(lRoot));
 		lCriteriaQuery.where(
-				lCriteriaBuilder.equal(lRoot.get("pseudoclient"),lCriteriaBuilder.parameter(String.class,"pseudo") ),
-				lCriteriaBuilder.equal(lRoot.get("mdpclient"), lCriteriaBuilder.parameter(String.class,"mdp")), 
-				lCriteriaBuilder.equal(lRoot.get("admin"),lCriteriaBuilder.parameter(Boolean.class,"admin") ));
-		// 
+				lCriteriaBuilder.equal(lRoot.get("pseudoclient"), lCriteriaBuilder.parameter(String.class, "pseudo")),
+				lCriteriaBuilder.equal(lRoot.get("mdpclient"), lCriteriaBuilder.parameter(String.class, "mdp")),
+				lCriteriaBuilder.equal(lRoot.get("admin"), lCriteriaBuilder.parameter(Boolean.class, "admin")));
+		//
 		final TypedQuery<Long> lTypedQuery = entityManager.createQuery(lCriteriaQuery);
 		lTypedQuery.setParameter("pseudo", pseudo);
 		lTypedQuery.setParameter("mdp", mdp);
 		lTypedQuery.setParameter("admin", admin);
 
 		final int lRowCount = lTypedQuery.getResultList().size();
-		// 
+		//
 		if (lRowCount > 0) {
-			if(lTypedQuery.getResultList().get(0) == 0) return false;
+			if (lTypedQuery.getResultList().get(0) == 0)
+				return false;
 			return true;
 		}
 		return false;
@@ -58,7 +58,10 @@ public class ListeClientsDAO implements IListeClientsDAO {
 
 	public void creerClient(Client client) {
 		// TODO Auto-generated method stub
-		entityManager.persist(client);
+		boolean identifierClient = identifierClient(client.getPseudoclient(), client.getMdpclient(), client.isAdmin());
+		if (identifierClient == false) {
+			entityManager.persist(client);
+		}
 	}
 
 	public void modifierClient(final Client client) {

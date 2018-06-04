@@ -2,14 +2,20 @@ package filrouge.admin.controller;
 
 import java.util.Date;
 
+import javax.validation.Valid;
 import javax.validation.constraints.Pattern;
 
 import org.hibernate.validator.constraints.NotEmpty;
+import org.springframework.format.annotation.DateTimeFormat;
 
 public class CreerClientForm {
 	private String nom;
 	private String prenom;
+	@Valid
+	@NotEmpty
+	@DateTimeFormat(pattern = "MM/dd/yyyy")
 	private Date naissance;
+	private Date date = new Date();
 	@NotEmpty
 	private String pseudo;
 	@NotEmpty
@@ -33,7 +39,10 @@ public class CreerClientForm {
 	}
 
 	public Date getNaissance() {
-		return naissance;
+		if (naissance != null) {
+			return naissance;
+		}
+		return date;
 	}
 
 	public void setNaissance(final Date pNaissance) {
@@ -56,7 +65,7 @@ public class CreerClientForm {
 		mdp = pMdp;
 	}
 
-	public boolean getAdmin() {
+	public boolean isAdmin() {
 		return admin;
 	}
 

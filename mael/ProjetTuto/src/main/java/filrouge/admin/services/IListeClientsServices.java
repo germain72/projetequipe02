@@ -11,9 +11,9 @@ public interface IListeClientsServices {
 	boolean identifierClient(String pseudo, String mdp, boolean admin);
 
 	void creerClient(final String nom, final String prenom, final Date naissance,
-					 final String pseudo, final String mdp, final boolean admin);
+				final String pseudo, final String mdp, final boolean admin);
 
-	void modifierClient();
+	void modifierClient(final List<Client> listeClients);
 
-	void supprimerClient();
+	void supprimerClient(final Integer idClient);
 }
