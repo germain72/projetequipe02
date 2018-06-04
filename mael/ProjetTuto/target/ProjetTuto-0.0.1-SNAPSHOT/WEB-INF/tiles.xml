@@ -12,6 +12,10 @@
 		<put-attribute name="principal" value="/view/creerClient.jsp" />
 	</definition>
 
+	<definition name="supprimerClient" template="/view/page.jsp">
+		<put-attribute name="principal" value="/view/supprimerClient.jsp" />
+	</definition>
+
 	<definition name="listeCourses" template="/view/page.jsp">
 		<put-attribute name="principal" value="/view/listeCourses.jsp" />
 	</definition>

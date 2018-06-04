@@ -3,8 +3,6 @@ package filrouge.admin.controller;
 import java.util.Date;
 import java.util.List;
 
-import javax.validation.Valid;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
@@ -26,9 +24,7 @@ public class CreerClientController {
 		final List<Client> lListeClients = service.listeClients();
 		pModel.addAttribute("listeClients", lListeClients);
 		if (pModel.get("creerClient") == null) {
-			CreerClientForm ccf = new CreerClientForm();
-			ccf.setNaissance(new Date());
-			pModel.addAttribute("creerClient", ccf);
+			pModel.addAttribute("creerClient", new CreerClientForm());
 		}
 		return "creerClient";
 	}

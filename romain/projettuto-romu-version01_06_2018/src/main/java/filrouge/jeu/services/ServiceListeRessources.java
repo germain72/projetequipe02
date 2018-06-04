@@ -6,7 +6,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import filrouge.jeu.DAO.IListePartiesDAO;
 import filrouge.jeu.DAO.IListeRessourcesDAO;
 import filrouge.jeu.bean.Ressources;
 
@@ -34,26 +33,40 @@ public class ServiceListeRessources implements IServiceListeRessources {
 //	}
 
 	@Transactional()
-	public void creerRessources(Ressources pRessources) {
+	public void creerRessources(final Ressources pRessources) {
 		// TODO Auto-generated method stub
 		dao.creerRessources(pRessources);
 
 	}
 
-	public void creerRessources(String libebelle, int typeRessource) {
+	@Transactional()
+	public void creerRessources(final String libebelle, final int typeRessource) {
 		// TODO Auto-generated method stub
 		Ressources nRessources = new Ressources(libebelle, typeRessource);
+		dao.creerRessources(nRessources);
+		
+	}
+
+	@Transactional()
+	public void supprimerRessources(final Ressources pRessources) {
+		// TODO Auto-generated method stub
+		dao.supprimerRessources(pRessources);
 
 	}
 
-	public void supprimerRessources(Ressources pRessources) {
+	@Transactional()
+	public void modifierRessources(final Ressources pRessource) {
 		// TODO Auto-generated method stub
-
+		dao.supprimerRessources(pRessource);
 	}
 
-	public void modifierRessources(Ressources pRessources) {
+	@Transactional()
+	public void modifierRessources(final List<Ressources> pRessources) {
 		// TODO Auto-generated method stub
-
+		for (Ressources ressources : pRessources) {
+			dao.supprimerRessources(ressources);
+		}
+		
 	}
 
 }

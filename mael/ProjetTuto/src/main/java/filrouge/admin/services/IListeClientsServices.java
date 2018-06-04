@@ -10,6 +10,8 @@ public interface IListeClientsServices {
 
 	boolean identifierClient(String pseudo, String mdp, boolean admin);
 
+	boolean identifierNouveauClient(String pseudo, boolean admin);
+
 	void creerClient(final String nom, final String prenom, final Date naissance,
 				final String pseudo, final String mdp, final boolean admin);
 

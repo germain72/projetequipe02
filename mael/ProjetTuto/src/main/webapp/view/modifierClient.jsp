@@ -7,7 +7,7 @@ pageEncoding="ISO-8859-1"%>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 
-	    <form:form method="post" modelAttribute="modification" action="modifierModificationListeCourses">
+	    <form:form method="post" modelAttribute="modification" action="modifierModificationListeClients">
 	        <table border="1">
 	            <thead>
 	                <tr>
@@ -21,19 +21,35 @@ pageEncoding="ISO-8859-1"%>
 	            	</tr>
 	            </thead>
 	            <tbody>
-					<c:forEach items="${modification.listeCourses}" var="client" varStatus="status">
+					<c:forEach items="${modification.listeClients}" var="client" varStatus="status">
 		                <tr>
 		                    <td>
 		                	<c:out value="${client.idclient}"/>
 								<input type="hidden" name="listeClients[${status.index}].idclient" value="${client.idclient}"/>
 		                	</td>
 		                	<td>
-		                	<c:out value="${client.nomclient}"/>
-								<input type="hidden" name="listeClients[${status.index}].nomclient" value="${client.nomclient}"/>
+								<input type="text" name="listeClients[${status.index}].nomclient" value="${client.nomclient}"/><br/>
+								<b><i><form:errors path="listeClients[${status.index}].nomclient" /></i></b>
 		                	</td>
 		                	<td>
 								<input type="text" name="listeClients[${status.index}].prenomclient" value="${client.prenomclient}"/><br/>
 								<b><i><form:errors path="listeClients[${status.index}].prenomclient" /></i></b>
+		                	</td>
+		                	<td>
+								<input type="text" name="listeClients[${status.index}].naissanceclient" value="${client.naissanceclient}"/><br/>
+								<b><i><form:errors path="listeClients[${status.index}].naissanceclient" /></i></b>
+		                	</td>
+		                	<td>
+								<input type="text" name="listeClients[${status.index}].pseudoclient" value="${client.pseudoclient}"/><br/>
+								<b><i><form:errors path="listeClients[${status.index}].pseudoclient" /></i></b>
+		                	</td>
+		                	<td>
+								<input type="text" name="listeClients[${status.index}].mdpclient" value="${client.mdpclient}"/><br/>
+								<b><i><form:errors path="listeClients[${status.index}].mdpclient" /></i></b>
+		                	</td>
+		                	<td>
+								<input type="checkbox" name="listeClients[${status.index}].admin" value="${client.admin}"/><br/>
+								<b><i><form:errors path="listeClients[${status.index}].admin" /></i></b>
 		                	</td>
 		                </tr>
 		            </c:forEach>
