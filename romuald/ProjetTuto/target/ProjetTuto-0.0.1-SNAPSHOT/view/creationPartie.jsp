@@ -12,25 +12,21 @@
 <link href="<c:url value="/resources/bootstrap/css/bootstrap-theme.min.css" />" rel="stylesheet">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script type="text/javascript" src="<c:url value="/resources/bootstrap/js/bootstrap.min.js"/>"></script>
-<link href="<c:url value="/resources/projettuto.css" />" rel="stylesheet">
+<link href="<c:url value="/resources/css/projettuto.css" />" rel="stylesheet">
 
 <title><spring:message code="titre.creation.elementparties" /></title>
 </head>
 <body>
 	<form:form method="post" modelAttribute="creationPartie" action="creerCreationListeParties">
 		
-		<spring:message code="creation.elementparties.nom.nom" />
-		<form:input path="nom" />
+		<spring:message code="creation.elementparties.nom.nom" /> <form:input path="nom" />
 		<b><i><form:errors path="nom" cssclass="error" /></i></b>
 		<br/>
-		<spring:message code="creation.elementparties.date.date" />
-		<form:input path="date" />
-		<br/>
-		<b><i><form:errors path="date" cssclass="error" /></i></b>
-		
-		
+		<spring:message code="creation.elementparties.date.date" /> <form:input path="date" />
+		<b><i><form:errors path="date" cssclass="error" /></i></b>	
 		<br>
 		<input type="submit" />
+		
 	</form:form>
 	<table border="1">
 		<thead>

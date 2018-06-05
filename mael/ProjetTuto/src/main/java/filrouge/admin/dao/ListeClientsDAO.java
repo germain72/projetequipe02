@@ -92,7 +92,25 @@ public class ListeClientsDAO implements IListeClientsDAO {
 
 	public void modifierClient(final Client client) {
 		// TODO Auto-generated method stub
-		// À FAIRE !!!
+		final CriteriaBuilder lCriteriaBuilder = entityManager.getCriteriaBuilder();
+		final CriteriaUpdate<Client> lCriteriaUpdate = lCriteriaBuilder.createCriteriaUpdate(Client.class);
+		final Root<Client> lRoot = lCriteriaUpdate.from(Client.class);
+		final Path<Client> lPath = lRoot.get("idclient");
+		final Expression<Boolean> lExpression = lCriteriaBuilder.equal(lPath, client.getIdclient());
+		lCriteriaUpdate.where(lExpression);
+		lCriteriaUpdate.set("nomclient", client.getNomclient());
+		lCriteriaUpdate.set("prenomclient", client.getPrenomclient());
+		lCriteriaUpdate.set("naissanceclient", client.getNaissanceclient());
+		lCriteriaUpdate.set("pseudoclient", client.getPseudoclient());
+		lCriteriaUpdate.set("mdpclient", client.getMdpclient());
+		lCriteriaUpdate.set("admin", client.isAdmin());
+		final Query lQuery = entityManager.createQuery(lCriteriaUpdate);
+		final int lRowCount = lQuery.executeUpdate();
+		if (lRowCount != 1) {
+			final org.hibernate.Query lHQuery = lQuery.unwrap(org.hibernate.Query.class);
+			final String lSql = lHQuery.getQueryString();
+			throw new RuntimeException("Nombre d'occurences (" + lRowCount + ") modifiés différent de 1 pour " + lSql);
+		}
 	}
 
 	public void supprimerClient(final Client client) {

@@ -42,6 +42,12 @@
                                     </a>
                                 </td></tr>
                                 <tr><td>
+                                    <c:url value="/afficherModificationListeClients" var="url" />
+                                    <a href="${url}">
+                                        <spring:message code="titre.modifierClients"/>
+                                    </a>
+                                </td></tr>
+                                <tr><td>
                                     <c:url value="/afficherSuppressionListeClients" var="url" />
                                     <a href="${url}">
                                         <spring:message code="titre.supprimerClients"/>

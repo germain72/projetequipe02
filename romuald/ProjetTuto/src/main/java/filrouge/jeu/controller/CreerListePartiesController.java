@@ -3,6 +3,8 @@ package filrouge.jeu.controller;
 import java.util.Date;
 import java.util.List;
 
+import javax.validation.Valid;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
@@ -25,19 +27,20 @@ public class CreerListePartiesController {
 		pModel.addAttribute("listeParties", IListeParties);
 		if (pModel.get("creationPartie") == null) {
 			CreationFormPartie CF = new CreationFormPartie();
-			CF.setDate(new Date());
+			//CF.setDate(new Date());
 			pModel.addAttribute("creationPartie", CF);
 		}
 		return "creationPartie";
 	}
 	@RequestMapping(value="/creerCreationListeParties", method = RequestMethod.POST)
-	public String creer(@ModelAttribute(value="creationPartie") final CreationFormPartie pCreation,
+	public String creer(@Valid @ModelAttribute(value="creationPartie") final CreationFormPartie pCreation,
 			final BindingResult pBindingResult, final ModelMap pModel) {
 		
 		if (!pBindingResult.hasErrors()) {
-			service.creerPartie(pCreation.getNom(), pCreation.getDate());
+			//service.creerPartie(pCreation.getNom(), pCreation.getDate());
 			}
-		return afficher(pModel);
+		//return afficher(pModel);
+		return "";
 		}
 }
 

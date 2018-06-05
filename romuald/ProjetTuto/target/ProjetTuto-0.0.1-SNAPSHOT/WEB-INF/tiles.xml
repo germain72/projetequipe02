@@ -9,22 +9,17 @@
 			value="/view/listeJoueurs.jsp" />
 	</definition>
 
-	<definition name="creerJoueur" template="/view/page.jsp">
-		<put-attribute name="principal"
-			value="/view/creerJoueur.jsp" />
-	</definition>
-
-	<definition name="creation" template="/view/page.jsp">
+	<definition name="creationJoueur" template="/view/page.jsp">
 		<put-attribute name="principal"
 			value="/view/creationJoueur.jsp" />
 	</definition>
 
-	<definition name="suppression" template="/view/page.jsp">
+	<definition name="suppressionJoueur" template="/view/page.jsp">
 		<put-attribute name="principal"
 			value="/view/suppressionJoueur.jsp" />
 	</definition>
 
-	<definition name="modification" template="/view/page.jsp">
+	<definition name="modificationJoueur" template="/view/page.jsp">
 		<put-attribute name="principal"
 			value="/view/modificationJoueur.jsp" />
 	</definition>

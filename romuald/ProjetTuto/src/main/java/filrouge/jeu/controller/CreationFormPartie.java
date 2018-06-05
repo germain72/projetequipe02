@@ -1,20 +1,24 @@
 package filrouge.jeu.controller;
 
+import java.time.LocalDate;
 import java.util.Date;
 
 import javax.validation.Valid;
 
 import org.hibernate.validator.constraints.NotEmpty;
 import org.springframework.format.annotation.DateTimeFormat;
+import org.springframework.format.annotation.DateTimeFormat.ISO;
+import javax.validation.constraints.Past;
 
 public class CreationFormPartie {
-
+	
+	@Valid
 	@NotEmpty
 	private String nom;
 
-	@Valid
-	@NotEmpty
-	@DateTimeFormat(pattern = "dd/MM/yyyy")
+
+	@NotEmpty(message="{creation.partie.date.notempty}")
+	@DateTimeFormat(pattern="dd/MM/yyyy")
 	private Date date;
 	
 	public String getNom() {

@@ -7,7 +7,7 @@ pageEncoding="ISO-8859-1"%>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 
-	    <form:form method="post" modelAttribute="modification" action="modifierModificationListeClients">
+	    <form:form method="post" modelAttribute="modifierClient" action="modifierModificationListeClients">
 	        <table border="1">
 	            <thead>
 	                <tr>
@@ -21,7 +21,7 @@ pageEncoding="ISO-8859-1"%>
 	            	</tr>
 	            </thead>
 	            <tbody>
-					<c:forEach items="${modification.listeClients}" var="client" varStatus="status">
+					<c:forEach items="${modifierClient.listeClients}" var="client" varStatus="status">
 		                <tr>
 		                    <td>
 		                	<c:out value="${client.idclient}"/>
@@ -48,7 +48,7 @@ pageEncoding="ISO-8859-1"%>
 								<b><i><form:errors path="listeClients[${status.index}].mdpclient" /></i></b>
 		                	</td>
 		                	<td>
-								<input type="checkbox" name="listeClients[${status.index}].admin" value="${client.admin}"/><br/>
+								<input type="text" name="listeClients[${status.index}].admin" value="${client.admin}"/><br/>
 								<b><i><form:errors path="listeClients[${status.index}].admin" /></i></b>
 		                	</td>
 		                </tr>

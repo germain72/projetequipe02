@@ -16,7 +16,7 @@
         <link href="<c:url value="/resources/bootstrap/css/bootstrap-theme.min.css" />" rel="stylesheet">
        <!--  <link href="<c:url value="/resources/css/bootstrap-theme.min.css" />" rel="stylesheet"> -->
         
-        <link href="<c:url value="/resources/projettuto.css" />" rel="stylesheet">
+        <link href="<c:url value="/resources/css/projettuto.css" />" rel="stylesheet">
         
 		<script src="<c:url value="/resources/bootstrap/js/bootstrap-datepicker.min.js"/>"></script>
         <link href="<c:url value="/resources/bootstrap/css/datepicker.min.css"/>" rel="stylesheet" />
