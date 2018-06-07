@@ -1,37 +1,40 @@
-C:\Users\Formation.M2I-JAV5-04\Documents\workspace-sts-3.9.4.RELEASE\ProjetTuto\src\main\java\filrouge\jeu\bean\RelationJoueur.java
-C:\Users\Formation.M2I-JAV5-04\Documents\workspace-sts-3.9.4.RELEASE\ProjetTuto\src\main\java\filrouge\jeu\controller\CreerListeJoueursController.java
-C:\Users\Formation.M2I-JAV5-04\Documents\workspace-sts-3.9.4.RELEASE\ProjetTuto\src\main\java\filrouge\jeu\controller\CreerListePartiesController.java
-C:\Users\Formation.M2I-JAV5-04\Documents\workspace-sts-3.9.4.RELEASE\ProjetTuto\src\main\java\filrouge\jeu\bean\RelationRessource.java
-C:\Users\Formation.M2I-JAV5-04\Documents\workspace-sts-3.9.4.RELEASE\ProjetTuto\src\main\java\filrouge\jeu\bean\Joueur.java
-C:\Users\Formation.M2I-JAV5-04\Documents\workspace-sts-3.9.4.RELEASE\ProjetTuto\src\main\java\filrouge\jeu\services\ServiceListeParties.java
-C:\Users\Formation.M2I-JAV5-04\Documents\workspace-sts-3.9.4.RELEASE\ProjetTuto\src\main\java\filrouge\jeu\controller\SupprimerListePartiesController.java
-C:\Users\Formation.M2I-JAV5-04\Documents\workspace-sts-3.9.4.RELEASE\ProjetTuto\src\main\java\filrouge\admin\controller\ExampleController1.java
-C:\Users\Formation.M2I-JAV5-04\Documents\workspace-sts-3.9.4.RELEASE\ProjetTuto\src\main\java\filrouge\jeu\controller\SupprimerListeJoueursController.java
-C:\Users\Formation.M2I-JAV5-04\Documents\workspace-sts-3.9.4.RELEASE\ProjetTuto\src\main\java\filrouge\admin\controller\IdentifierClientController.java
-C:\Users\Formation.M2I-JAV5-04\Documents\workspace-sts-3.9.4.RELEASE\ProjetTuto\src\main\java\filrouge\admin\services\ListeClientsServices.java
-C:\Users\Formation.M2I-JAV5-04\Documents\workspace-sts-3.9.4.RELEASE\ProjetTuto\src\main\java\filrouge\jeu\controller\ModificationJoueur.java
-C:\Users\Formation.M2I-JAV5-04\Documents\workspace-sts-3.9.4.RELEASE\ProjetTuto\src\main\java\filrouge\admin\bean\package-info.java
-C:\Users\Formation.M2I-JAV5-04\Documents\workspace-sts-3.9.4.RELEASE\ProjetTuto\src\main\java\filrouge\admin\DAO\ListeClientsDAO.java
-C:\Users\Formation.M2I-JAV5-04\Documents\workspace-sts-3.9.4.RELEASE\ProjetTuto\src\main\java\filrouge\admin\bean\Commandes.java
-C:\Users\Formation.M2I-JAV5-04\Documents\workspace-sts-3.9.4.RELEASE\ProjetTuto\src\main\java\filrouge\jeu\controller\AfficherListeJoueursController.java
-C:\Users\Formation.M2I-JAV5-04\Documents\workspace-sts-3.9.4.RELEASE\ProjetTuto\src\main\java\filrouge\jeu\controller\ModifierListeJoueursController.java
-C:\Users\Formation.M2I-JAV5-04\Documents\workspace-sts-3.9.4.RELEASE\ProjetTuto\src\main\java\filrouge\jeu\DAO\IListeJoueursDAO.java
-C:\Users\Formation.M2I-JAV5-04\Documents\workspace-sts-3.9.4.RELEASE\ProjetTuto\src\main\java\filrouge\jeu\controller\CreationFormPartie.java
-C:\Users\Formation.M2I-JAV5-04\Documents\workspace-sts-3.9.4.RELEASE\ProjetTuto\src\main\java\filrouge\jeu\controller\ModificationFormJoueur.java
-C:\Users\Formation.M2I-JAV5-04\Documents\workspace-sts-3.9.4.RELEASE\ProjetTuto\src\main\java\filrouge\jeu\services\IServiceListeParties.java
-C:\Users\Formation.M2I-JAV5-04\Documents\workspace-sts-3.9.4.RELEASE\ProjetTuto\src\main\java\filrouge\jeu\controller\AfficherListePartiesController.java
-C:\Users\Formation.M2I-JAV5-04\Documents\workspace-sts-3.9.4.RELEASE\ProjetTuto\src\main\java\filrouge\admin\controller\MyControllerAdvice.java
-C:\Users\Formation.M2I-JAV5-04\Documents\workspace-sts-3.9.4.RELEASE\ProjetTuto\src\main\java\filrouge\admin\bean\Client.java
-C:\Users\Formation.M2I-JAV5-04\Documents\workspace-sts-3.9.4.RELEASE\ProjetTuto\src\main\java\filrouge\admin\services\IListeClientsServices.java
-C:\Users\Formation.M2I-JAV5-04\Documents\workspace-sts-3.9.4.RELEASE\ProjetTuto\src\main\java\filrouge\jeu\controller\CreationFormJoueur.java
-C:\Users\Formation.M2I-JAV5-04\Documents\workspace-sts-3.9.4.RELEASE\ProjetTuto\src\main\java\filrouge\admin\DAO\IListeClientsDAO.java
-C:\Users\Formation.M2I-JAV5-04\Documents\workspace-sts-3.9.4.RELEASE\ProjetTuto\src\main\java\filrouge\jeu\services\IServiceListeJoueurs.java
-C:\Users\Formation.M2I-JAV5-04\Documents\workspace-sts-3.9.4.RELEASE\ProjetTuto\src\main\java\filrouge\jeu\DAO\IListePartiesDAO.java
-C:\Users\Formation.M2I-JAV5-04\Documents\workspace-sts-3.9.4.RELEASE\ProjetTuto\src\main\java\filrouge\jeu\DAO\ListePartiesDAO.java
-C:\Users\Formation.M2I-JAV5-04\Documents\workspace-sts-3.9.4.RELEASE\ProjetTuto\src\main\java\filrouge\jeu\bean\Ressources.java
-C:\Users\Formation.M2I-JAV5-04\Documents\workspace-sts-3.9.4.RELEASE\ProjetTuto\src\main\java\filrouge\jeu\services\ServiceListeJoueurs.java
-C:\Users\Formation.M2I-JAV5-04\Documents\workspace-sts-3.9.4.RELEASE\ProjetTuto\src\main\java\filrouge\jeu\DAO\ListeJoueursDAO.java
-C:\Users\Formation.M2I-JAV5-04\Documents\workspace-sts-3.9.4.RELEASE\ProjetTuto\src\main\java\filrouge\jeu\controller\DateTime.java
-C:\Users\Formation.M2I-JAV5-04\Documents\workspace-sts-3.9.4.RELEASE\ProjetTuto\src\main\java\filrouge\jeu\bean\Partie.java
-C:\Users\Formation.M2I-JAV5-04\Documents\workspace-sts-3.9.4.RELEASE\ProjetTuto\src\main\java\filrouge\jeu\bean\Exploitation.java
-C:\Users\Formation.M2I-JAV5-04\Documents\workspace-sts-3.9.4.RELEASE\ProjetTuto\src\main\java\filrouge\admin\controller\ExampleController2.java
+C:\Users\romua\OneDrive\Documents\Formation J2E - Développement Web\STS projects\ProjetTuto\src\main\java\filrouge\admin\controller\MyControllerAdvice.java
+C:\Users\romua\OneDrive\Documents\Formation J2E - Développement Web\STS projects\ProjetTuto\src\main\java\filrouge\admin\bean\package-info.java
+C:\Users\romua\OneDrive\Documents\Formation J2E - Développement Web\STS projects\ProjetTuto\src\main\java\filrouge\admin\controller\ExampleController2.java
+C:\Users\romua\OneDrive\Documents\Formation J2E - Développement Web\STS projects\ProjetTuto\src\main\java\filrouge\admin\DAO\IListeClientsDAO.java
+C:\Users\romua\OneDrive\Documents\Formation J2E - Développement Web\STS projects\ProjetTuto\src\main\java\filrouge\jeu\DAO\ListeJoueursDAO.java
+C:\Users\romua\OneDrive\Documents\Formation J2E - Développement Web\STS projects\ProjetTuto\src\main\java\filrouge\admin\controller\IdentifierClientController.java
+C:\Users\romua\OneDrive\Documents\Formation J2E - Développement Web\STS projects\ProjetTuto\src\main\java\filrouge\jeu\controller\CreerListePartiesController.java
+C:\Users\romua\OneDrive\Documents\Formation J2E - Développement Web\STS projects\ProjetTuto\src\main\java\filrouge\jeu\bean\Ressources.java
+C:\Users\romua\OneDrive\Documents\Formation J2E - Développement Web\STS projects\ProjetTuto\src\main\java\filrouge\admin\services\ListeClientsServices.java
+C:\Users\romua\OneDrive\Documents\Formation J2E - Développement Web\STS projects\ProjetTuto\src\main\java\filrouge\jeu\controller\ModificationJoueur.java
+C:\Users\romua\OneDrive\Documents\Formation J2E - Développement Web\STS projects\ProjetTuto\src\main\java\filrouge\jeu\controller\ModifierListeJoueursController.java
+C:\Users\romua\OneDrive\Documents\Formation J2E - Développement Web\STS projects\ProjetTuto\src\main\java\filrouge\admin\DAO\ListeClientsDAO.java
+C:\Users\romua\OneDrive\Documents\Formation J2E - Développement Web\STS projects\ProjetTuto\src\main\java\filrouge\jeu\controller\ModificationPartie.java
+C:\Users\romua\OneDrive\Documents\Formation J2E - Développement Web\STS projects\ProjetTuto\src\main\java\filrouge\jeu\bean\Exploitation.java
+C:\Users\romua\OneDrive\Documents\Formation J2E - Développement Web\STS projects\ProjetTuto\src\main\java\filrouge\jeu\controller\CreerListeJoueursController.java
+C:\Users\romua\OneDrive\Documents\Formation J2E - Développement Web\STS projects\ProjetTuto\src\main\java\filrouge\jeu\bean\RelationRessource.java
+C:\Users\romua\OneDrive\Documents\Formation J2E - Développement Web\STS projects\ProjetTuto\src\main\java\filrouge\jeu\controller\SupprimerListeJoueursController.java
+C:\Users\romua\OneDrive\Documents\Formation J2E - Développement Web\STS projects\ProjetTuto\src\main\java\filrouge\admin\bean\Commandes.java
+C:\Users\romua\OneDrive\Documents\Formation J2E - Développement Web\STS projects\ProjetTuto\src\main\java\filrouge\jeu\controller\SupprimerListePartiesController.java
+C:\Users\romua\OneDrive\Documents\Formation J2E - Développement Web\STS projects\ProjetTuto\src\main\java\filrouge\jeu\services\ServiceListeJoueurs.java
+C:\Users\romua\OneDrive\Documents\Formation J2E - Développement Web\STS projects\ProjetTuto\src\main\java\filrouge\jeu\controller\ModificationFormJoueur.java
+C:\Users\romua\OneDrive\Documents\Formation J2E - Développement Web\STS projects\ProjetTuto\src\main\java\filrouge\jeu\controller\ModificationFormPartie.java
+C:\Users\romua\OneDrive\Documents\Formation J2E - Développement Web\STS projects\ProjetTuto\src\main\java\filrouge\jeu\services\IServiceListeParties.java
+C:\Users\romua\OneDrive\Documents\Formation J2E - Développement Web\STS projects\ProjetTuto\src\main\java\filrouge\jeu\DAO\IListeJoueursDAO.java
+C:\Users\romua\OneDrive\Documents\Formation J2E - Développement Web\STS projects\ProjetTuto\src\main\java\modificationPartie.java
+C:\Users\romua\OneDrive\Documents\Formation J2E - Développement Web\STS projects\ProjetTuto\src\main\java\filrouge\admin\services\IListeClientsServices.java
+C:\Users\romua\OneDrive\Documents\Formation J2E - Développement Web\STS projects\ProjetTuto\src\main\java\filrouge\jeu\controller\AfficherListePartiesController.java
+C:\Users\romua\OneDrive\Documents\Formation J2E - Développement Web\STS projects\ProjetTuto\src\main\java\filrouge\jeu\controller\CreationFormJoueur.java
+C:\Users\romua\OneDrive\Documents\Formation J2E - Développement Web\STS projects\ProjetTuto\src\main\java\filrouge\jeu\controller\CreationFormPartie.java
+C:\Users\romua\OneDrive\Documents\Formation J2E - Développement Web\STS projects\ProjetTuto\src\main\java\filrouge\jeu\services\ServiceListeParties.java
+C:\Users\romua\OneDrive\Documents\Formation J2E - Développement Web\STS projects\ProjetTuto\src\main\java\filrouge\jeu\controller\ModifierListePartiesController.java
+C:\Users\romua\OneDrive\Documents\Formation J2E - Développement Web\STS projects\ProjetTuto\src\main\java\filrouge\admin\bean\Client.java
+C:\Users\romua\OneDrive\Documents\Formation J2E - Développement Web\STS projects\ProjetTuto\src\main\java\filrouge\jeu\bean\Joueur.java
+C:\Users\romua\OneDrive\Documents\Formation J2E - Développement Web\STS projects\ProjetTuto\src\main\java\filrouge\jeu\controller\AfficherListeJoueursController.java
+C:\Users\romua\OneDrive\Documents\Formation J2E - Développement Web\STS projects\ProjetTuto\src\main\java\filrouge\jeu\DAO\IListePartiesDAO.java
+C:\Users\romua\OneDrive\Documents\Formation J2E - Développement Web\STS projects\ProjetTuto\src\main\java\filrouge\jeu\DAO\ListePartiesDAO.java
+C:\Users\romua\OneDrive\Documents\Formation J2E - Développement Web\STS projects\ProjetTuto\src\main\java\filrouge\jeu\services\IServiceListeJoueurs.java
+C:\Users\romua\OneDrive\Documents\Formation J2E - Développement Web\STS projects\ProjetTuto\src\main\java\filrouge\jeu\bean\RelationJoueur.java
+C:\Users\romua\OneDrive\Documents\Formation J2E - Développement Web\STS projects\ProjetTuto\src\main\java\filrouge\jeu\bean\Partie.java
+C:\Users\romua\OneDrive\Documents\Formation J2E - Développement Web\STS projects\ProjetTuto\src\main\java\filrouge\admin\controller\ExampleController1.java

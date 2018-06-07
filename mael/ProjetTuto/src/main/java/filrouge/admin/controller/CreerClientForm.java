@@ -3,6 +3,7 @@ package filrouge.admin.controller;
 import java.util.Date;
 
 import javax.validation.Valid;
+import javax.validation.constraints.Pattern;
 
 import org.hibernate.validator.constraints.NotEmpty;
 import org.springframework.format.annotation.DateTimeFormat;
@@ -10,11 +11,10 @@ import org.springframework.format.annotation.DateTimeFormat;
 public class CreerClientForm {
 	private String nom;
 	private String prenom;
-	@Valid
-	@NotEmpty
-	@DateTimeFormat(pattern = "MM/dd/yyyy")
-	private Date naissance;
-	private Date date = new Date();
+	@NotEmpty(message = "")
+	@Pattern(regexp = "(0?[1-9]|[12][0-9]|3[01])/(0?[1-9]|1[012])/((19|20)\\d\\d)", message = "Format jj/mm/aaaa requis")
+	private String naissance;
+	private String date = "31/12/1999";
 	@NotEmpty
 	private String pseudo;
 	@NotEmpty
@@ -37,14 +37,14 @@ public class CreerClientForm {
 		this.prenom = pPrenom;
 	}
 
-	public Date getNaissance() {
+	public String getNaissance() {
 		if (naissance != null) {
 			return naissance;
 		}
 		return date;
 	}
 
-	public void setNaissance(final Date pNaissance) {
+	public void setNaissance(final String pNaissance) {
 		this.naissance = pNaissance;
 	}
 

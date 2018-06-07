@@ -18,7 +18,7 @@
 				<c:forEach items="${modificationJoueur.listeJoueurs}" var="joueur"
 					varStatus="status">
 					<tr>
-						<td><c:out value="${joueur.idjoueur}" /> <input type="hidden"
+						<td><c:out value="${joueur.idpartie}" /> <input type="hidden"
 							name="listeJoueurs[${status.index}].idjoueur" value="${joueur.idjoueur}" />
 						</td>
 						<td><c:out value="${joueur.nom}" /> <input type="text"

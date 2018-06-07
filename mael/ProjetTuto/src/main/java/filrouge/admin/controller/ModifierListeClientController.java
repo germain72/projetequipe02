@@ -26,46 +26,46 @@ public class ModifierListeClientController {
 	public String afficher(final ModelMap pModel) {
 		if (pModel.get("modifierClient") == null) {
 			final List<Client> lListeClients = service.listeClients();
-			final ModifierClientForm lModifierClientForm = new ModifierClientForm();
-			final List<ModifierClient> lListe = new LinkedList<ModifierClient>();
+			final ModifierClient lModifierClient = new ModifierClient();
+			final List<ModifierClientForm> lListe = new LinkedList<ModifierClientForm>();
 			for (final Client lClient : lListeClients) {
-				final ModifierClient lModifierClient = new ModifierClient();
-				lModifierClient.setIdclient(lClient.getIdclient());
-				lModifierClient.setNomclient(lClient.getNomclient());
-				lModifierClient.setPrenomclient(lClient.getPrenomclient());
-				lModifierClient.setNaissanceclient(lClient.getNaissanceclient());
-				lModifierClient.setPseudoclient(lClient.getPseudoclient());
-				lModifierClient.setMdpclient(lClient.getMdpclient());
-				lModifierClient.setAdmin(lClient.isAdmin());
-				lListe.add(lModifierClient);
+				final ModifierClientForm lModifierClientForm = new ModifierClientForm();
+				lModifierClientForm.setIdclient(lClient.getIdclient());
+				lModifierClientForm.setNomclient(lClient.getNomclient());
+				lModifierClientForm.setPrenomclient(lClient.getPrenomclient());
+				lModifierClientForm.setNaissanceclient(lClient.getNaissanceclient());
+				lModifierClientForm.setPseudoclient(lClient.getPseudoclient());
+				lModifierClientForm.setMdpclient(lClient.getMdpclient());
+				lModifierClientForm.setAdmin(lClient.isAdmin());
+				lListe.add(lModifierClientForm);
 			}
-			lModifierClientForm.setListeClients(lListe);
-			pModel.addAttribute("modifierClient", lModifierClientForm);
+			lModifierClient.setListeClients(lListe);
+			pModel.addAttribute("modifierClient", lModifierClient);
 		}
 		return "modifierClient";
 	}
 
 	@RequestMapping(value = "/modifierModificationListeClients", method = RequestMethod.POST)
-	public String modifier(@Valid @ModelAttribute(value = "modifierClient") final ModifierClientForm pModifier,
+	public String modifier(@Valid @ModelAttribute(value = "modifierClient") final ModifierClient pModifier,
 			final BindingResult pBindingResult, final ModelMap pModel) {
 		if (!pBindingResult.hasErrors()) {
 			final List<Client> lListeClients = new LinkedList<Client>();
-			for (final ModifierClient lModifierClient : pModifier.getListeClients()) {
+			for (final ModifierClientForm lModifierClientForm : pModifier.getListeClients()) {
 				final Client lClient = new Client();
-				lClient.setIdclient(lModifierClient.getIdclient());
-				final String lNom = lModifierClient.getNomclient();
+				lClient.setIdclient(lModifierClientForm.getIdclient());
+				final String lNom = lModifierClientForm.getNomclient();
 				lClient.setNomclient(lNom);
-				final String lPrenom = lModifierClient.getPrenomclient();
+				final String lPrenom = lModifierClientForm.getPrenomclient();
 				lClient.setPrenomclient(lPrenom);
 
-				final Date lNaissance = lModifierClient.getNaissanceclient();
+				final Date lNaissance = lModifierClientForm.getNaissanceclient();
 				lClient.setNaissanceclient(lNaissance);
 				
-				final String lPseudo = lModifierClient.getPseudoclient();
+				final String lPseudo = lModifierClientForm.getPseudoclient();
 				lClient.setPseudoclient(lPseudo);
-				final String lMdp = lModifierClient.getMdpclient();
+				final String lMdp = lModifierClientForm.getMdpclient();
 				lClient.setMdpclient(lMdp);
-				final boolean lAdmin = lModifierClient.isAdmin();
+				final boolean lAdmin = lModifierClientForm.isAdmin();
 				lClient.setAdmin(lAdmin);
 				lListeClients.add(lClient);
 			}

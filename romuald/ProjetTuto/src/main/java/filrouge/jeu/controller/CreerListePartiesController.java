@@ -1,6 +1,6 @@
 package filrouge.jeu.controller;
 
-
+import java.util.Date;
 import java.util.List;
 
 import javax.validation.Valid;
@@ -37,10 +37,10 @@ public class CreerListePartiesController {
 			final BindingResult pBindingResult, final ModelMap pModel) {
 		
 		if (!pBindingResult.hasErrors()) {
-			service.creerPartie(pCreation.getNom(), DateTime.getDateFormat(pCreation.getDate(),""));
+			//service.creerPartie(pCreation.getNom(), pCreation.getDate());
 			}
-		return afficher(pModel);
-
+		//return afficher(pModel);
+		return "";
 		}
 }
 

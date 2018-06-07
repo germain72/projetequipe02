@@ -23,7 +23,10 @@
 		<spring-framework.version>4.0.2.RELEASE</spring-framework.version>
 
 		<!-- Hibernate / JPA -->
+		
 		<hibernate.version>4.3.4.Final</hibernate.version>
+		<validation.version>1.1.0.Final</validation.version>
+		<validator.version>5.0.1.Final</validator.version>
 
 		<!-- Logging -->
 		<logback.version>1.0.13</logback.version>
@@ -121,13 +124,13 @@
 		<dependency>
 			<groupId>javax.validation</groupId>
 			<artifactId>validation-api</artifactId>
-			<version>1.1.0.Final</version>
+			<version>${validation.version}</version>
 		</dependency>
 
 		<dependency>
 			<groupId>org.hibernate</groupId>
 			<artifactId>hibernate-validator</artifactId>
-			<version>5.0.1.Final</version>
+			<version>${validator.version}</version>
 		</dependency>
 
 		<dependency>

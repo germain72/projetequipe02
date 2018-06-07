@@ -20,7 +20,6 @@ public class ServiceListeParties implements IServiceListeParties {
 	public List<Partie> rechercherParties() {
 		return dao.rechercherParties();
 	}
-
 	
 	@Transactional
 	public void creerPartie(String pNom, Date pDate) {
@@ -29,13 +28,22 @@ public class ServiceListeParties implements IServiceListeParties {
 		lPartie.setDate(pDate);
 
 		dao.creerPartie(lPartie);
-		
 	}
 
+	@Transactional
 	public void supprimerPartie(Integer pIdPartie) {
 		final Partie lPartie = new Partie();
 		lPartie.setIdPartie(pIdPartie);
 		
 		dao.supprimerPartie(lPartie);
 	}
+
+	@Transactional
+	public void modifierParties(List<Partie> pListeParties) {
+		for (final Partie lPartie : pListeParties) {
+			
+			dao.modifierParties(lPartie);
+		
+	}
+}
 }

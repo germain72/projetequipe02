@@ -12,5 +12,7 @@ public interface IServiceListeParties {
 	void creerPartie (final String pNom, Date pDate);
 	
 	void supprimerPartie (final Integer pIdPartie);
+	
+	void modifierParties (final List<Partie> pListeParties);
 
 }

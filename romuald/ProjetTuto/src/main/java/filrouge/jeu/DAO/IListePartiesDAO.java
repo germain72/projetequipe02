@@ -12,4 +12,6 @@ public interface IListePartiesDAO {
 	
 	void supprimerPartie (final Partie pPartie);
 	
+	void modifierParties (final Partie pPartie);
+	
 }

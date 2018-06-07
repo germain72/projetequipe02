@@ -48,7 +48,7 @@ pageEncoding="ISO-8859-1"%>
 								<b><i><form:errors path="listeClients[${status.index}].mdpclient" /></i></b>
 		                	</td>
 		                	<td>
-								<input type="checkbox" name="listeClients[${status.index}].admin" value="${client.admin}"/><br/>
+								<input type="text" name="listeClients[${status.index}].admin" value="${client.admin}"/><br/>
 								<b><i><form:errors path="listeClients[${status.index}].admin" /></i></b>
 		                	</td>
 		                </tr>

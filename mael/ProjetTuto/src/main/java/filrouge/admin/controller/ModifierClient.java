@@ -1,74 +1,21 @@
 package filrouge.admin.controller;
 
-import java.util.Date;
+import java.util.List;
 
-import org.hibernate.validator.constraints.NotEmpty;
+import javax.validation.Valid;
 
+import org.springframework.stereotype.Controller;
+
+@Controller
 public class ModifierClient {
+	@Valid
+	private List<ModifierClientForm> listeClients;
 
-	private Integer idclient;
-	private String nomclient;
-	private String prenomclient;
-	private Date naissanceclient;
-	@NotEmpty
-	private String pseudoclient;
-	@NotEmpty
-	private String mdpclient;
-	private boolean admin;
-
-	public Integer getIdclient() {
-		return idclient;
+	public void setListeClients(final List<ModifierClientForm> pListeClient) {
+		listeClients = pListeClient;
 	}
 
-	public void setIdclient(final Integer pId) {
-		idclient = pId;
-	}
-
-	public String getNomclient() {
-		return nomclient;
-	}
-
-	public void setNomclient(final String pNom) {
-		nomclient = pNom;
-	}
-
-	public String getPrenomclient() {
-		return prenomclient;
-	}
-
-	public void setPrenomclient(final String pPrenom) {
-		prenomclient = pPrenom;
-	}
-
-	public Date getNaissanceclient() {
-		return naissanceclient;
-	}
-
-	public void setNaissanceclient(final Date pNaissance) {
-		naissanceclient = pNaissance;
-	}
-
-	public String getPseudoclient() {
-		return pseudoclient;
-	}
-
-	public void setPseudoclient(final String pPseudo) {
-		pseudoclient = pPseudo;
-	}
-
-	public String getMdpclient() {
-		return mdpclient;
-	}
-
-	public void setMdpclient(final String pMdp) {
-		mdpclient = pMdp;
-	}
-
-	public boolean isAdmin() {
-		return admin;
-	}
-
-	public void setAdmin(final boolean pAdmin) {
-		admin = pAdmin;
+	public List<ModifierClientForm> getListeClients() {
+		return listeClients;
 	}
 }
