@@ -1,14 +1,15 @@
 package filrouge.jeu.controller;
 
-import java.time.LocalDate;
-import java.util.Date;
+
+
+
 
 import javax.validation.Valid;
+import javax.validation.constraints.Pattern;
 
 import org.hibernate.validator.constraints.NotEmpty;
-import org.springframework.format.annotation.DateTimeFormat;
-import org.springframework.format.annotation.DateTimeFormat.ISO;
-import javax.validation.constraints.Past;
+
+
 
 public class CreationFormPartie {
 	
@@ -18,14 +19,16 @@ public class CreationFormPartie {
 
 
 	@NotEmpty(message="{creation.partie.date.notempty}")
-	@DateTimeFormat(pattern="dd/MM/yyyy")
-	private Date date;
+	@Pattern (regexp="(0?[1-9]|[12][0-9]|3[01])/(0?[1-9]|1[012])/((19|20)\\d\\d)")
+	private String date;
+	
 	
 	public String getNom() {
 		return nom;
 	}
 	
-	public Date getDate() {
+	public String getDate() {
+
 		return date;
 	}
 	
@@ -33,7 +36,7 @@ public class CreationFormPartie {
 		nom = pNom;
 	}
 	
-	public void setDate(final Date pDate) {
+	public void setDate(final String pDate) {
 		date = pDate;
 		
 	}
