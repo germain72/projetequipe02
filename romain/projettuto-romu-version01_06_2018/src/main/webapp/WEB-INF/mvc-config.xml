@@ -16,7 +16,8 @@
 	<mvc:annotation-driven />
 	<context:component-scan
 		base-package="filrouge" />
-<!-- 
+<!--  Code de gestion 
+ -->
 	<bean
 		class="org.springframework.web.servlet.view.UrlBasedViewResolver">
 		<property name="viewClass"
@@ -31,7 +32,6 @@
 			</list>
 		</property>
 	</bean>
- -->
 	<bean
 		class="org.springframework.web.servlet.view.InternalResourceViewResolver">
 		<!-- Example: a logical view name of 'showMessage' is mapped to '/WEB-INF/jsp/showMessage.jsp' -->

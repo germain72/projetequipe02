@@ -9,27 +9,27 @@
 	    
 	        <spring:message code="creerClients.nomclient" />
 	        <form:input path="nom"/>
-	        <b><i><form:errors path="nom" cssclass="error"/></i></b><br>
+	        <b><i><form:errors path="nom" class="error" cssclass="error"/></i></b><br>
 	        
 	        <spring:message code="creerClients.prenomclient" />
 	        <form:input path="prenom"/>
-	        <b><i><form:errors path="prenom" cssclass="error"/></i></b><br>
+	        <b><i><form:errors path="prenom" class="error" cssclass="error"/></i></b><br>
 	        
 	        <spring:message code="creerClients.naissanceclient" />
-	        <form:input path="naissance" data-provide="datepicker" />
-	        <b><i><form:errors path="naissance" cssclass="error"/></i></b><br>
+	        <form:input path="naissance" id="datepicker" />
+	        <b><i><form:errors path="naissance" class="error" cssclass="error"/></i></b><br>
 	        
 	        <spring:message code="creerClients.pseudoclient" />
 	        <form:input path="pseudo"/>
-	        <b><i><form:errors path="pseudo" cssclass="error"/></i></b><br>
+	        <b><i><form:errors path="pseudo" class="error" cssclass="error"/></i></b><br>
 	        
 	        <spring:message code="creerClients.mdpclient"/>
 	        <form:input path="mdp"/>
-	        <b><i><form:errors path="mdp" cssclass="error"/></i></b><br>
+	        <b><i><form:errors path="mdp" class="error" cssclass="error"/></i></b><br>
 	        
 	        <spring:message code="creerClients.admin"/>
 	        <form:checkbox path="admin"/>
-	        <b><i><form:errors path="admin" cssclass="error"/></i></b><br>
+	        <b><i><form:errors path="admin" class="error" cssclass="error"/></i></b><br>
 	        
 	        <input type="submit"/>
 	    </form:form>

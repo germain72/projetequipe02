@@ -17,15 +17,18 @@
 <title><spring:message code="titre.creation.elementparties" /></title>
 </head>
 <body>
+	<h1><spring:message code="titre.creation.parties" /></h1>
 	<form:form method="post" modelAttribute="creationPartie" action="creerCreationListeParties">
 		
 		<spring:message code="creation.elementparties.nom.nom" /> <form:input path="nom" />
-		<b><i><form:errors path="nom" cssclass="error" /></i></b>
+		<b><i><form:errors path="nom" cssclass="error" /></i></b> <!-- il faut ajouter class="error" pour que ça fonctionne sur certains navigateurs -->
+		
 		<br/>
 		<spring:message code="creation.elementparties.date.date" /> <form:input path="date" />
 		<b><i><form:errors path="date" cssclass="error" /></i></b>	
-		<br>
+		<br/>
 		<input type="submit" />
+		<br/>
 		
 	</form:form>
 	<table border="1">

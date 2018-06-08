@@ -33,7 +33,7 @@ public class ModifierListeClientController {
 				lModifierClientForm.setIdclient(lClient.getIdclient());
 				lModifierClientForm.setNomclient(lClient.getNomclient());
 				lModifierClientForm.setPrenomclient(lClient.getPrenomclient());
-				lModifierClientForm.setNaissanceclient(lClient.getNaissanceclient());
+				lModifierClientForm.setNaissanceclient(DateTime.getStringFormat(lClient.getNaissanceclient(),""));
 				lModifierClientForm.setPseudoclient(lClient.getPseudoclient());
 				lModifierClientForm.setMdpclient(lClient.getMdpclient());
 				lModifierClientForm.setAdmin(lClient.isAdmin());
@@ -58,7 +58,7 @@ public class ModifierListeClientController {
 				final String lPrenom = lModifierClientForm.getPrenomclient();
 				lClient.setPrenomclient(lPrenom);
 
-				final Date lNaissance = lModifierClientForm.getNaissanceclient();
+				final Date lNaissance = DateTime.getDateFormat(lModifierClientForm.getNaissanceclient(),"");
 				lClient.setNaissanceclient(lNaissance);
 				
 				final String lPseudo = lModifierClientForm.getPseudoclient();

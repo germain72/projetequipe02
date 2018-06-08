@@ -25,7 +25,6 @@ public class CreerClientController {
 		final List<Client> lListeClients = service.listeClients();
 		pModel.addAttribute("listeClients", lListeClients);
 		if (pModel.get("creerClient") == null) {
-			CreerClientForm CF = new CreerClientForm();
 			pModel.addAttribute("creerClient", new CreerClientForm());
 		}
 		return "creerClient";

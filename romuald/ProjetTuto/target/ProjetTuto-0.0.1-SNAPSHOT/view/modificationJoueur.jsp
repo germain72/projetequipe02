@@ -19,7 +19,7 @@
 					varStatus="status">
 					<tr>
 						<td><c:out value="${joueur.idpartie}" /> <input type="hidden"
-							name="listeJoueurs[${status.index}].idjoueur" value="${joueur.idjoueur}" />
+							name="listeJoueurs[${status.index}].idJoueur" value="${joueur.idjoueur}" />
 						</td>
 						<td><c:out value="${joueur.nom}" /> <input type="text"
 							name="listeJoueurs[${status.index}].nom" value="${joueur.nom}" /><br>

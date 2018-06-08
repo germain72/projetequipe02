@@ -1,6 +1,5 @@
 package filrouge.jeu.controller;
 
-import java.util.Date;
 import java.util.LinkedList;
 import java.util.List;
 
@@ -15,7 +14,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 import filrouge.jeu.bean.Partie;
-import filrouge.jeu.services.IServiceListeJoueurs;
 import filrouge.jeu.services.IServiceListeParties;
 
 @Controller
@@ -34,7 +32,7 @@ public class ModifierListePartiesController {
 				final ModificationPartie lModificationPartie = new ModificationPartie();
 				lModificationPartie.setIdpartie(lPartie.getIdPartie());
 				lModificationPartie.setNom(lPartie.getNom());
-				lModificationPartie.setDate(lPartie.getDate());
+				lModificationPartie.setDate(DateTime.getStringFormat(lPartie.getDate(), ""));
 				lListe.add(lModificationPartie);
 			}
 			lModificationForm.setListeParties(lListe);
@@ -53,7 +51,7 @@ public class ModifierListePartiesController {
 				final Partie lPartie = new Partie();
 				lPartie.setIdPartie(lModificationPartie.getIdPartie());
 				lPartie.setNom(lModificationPartie.getNom());
-				lPartie.setDate(lModificationPartie.getDate());
+				lPartie.setDate(DateTime.getDateFormat(lModificationPartie.getDate(), ""));
 				lListeParties.add(lPartie);
 			}
 			service.modifierParties(lListeParties);

@@ -2,6 +2,9 @@ package filrouge.admin.controller;
 
 import java.util.Date;
 
+import javax.validation.Valid;
+import javax.validation.constraints.Pattern;
+
 import org.hibernate.validator.constraints.NotEmpty;
 import org.springframework.format.annotation.DateTimeFormat;
 
@@ -10,9 +13,10 @@ public class ModifierClientForm {
 	private Integer idclient;
 	private String nomclient;
 	private String prenomclient;
-	@NotEmpty
-	@DateTimeFormat(pattern = "MM/dd/yyyy")
-	private Date naissanceclient;
+	@Valid
+	@NotEmpty(message = "")
+	@Pattern(regexp = "(0?[1-9]|[12][0-9]|3[01])/(0?[1-9]|1[012])/((19|20)\\d\\d)", message = "Date jj/mm/aaaa requise")
+	private String naissanceclient;
 	@NotEmpty
 	private String pseudoclient;
 	@NotEmpty
@@ -43,11 +47,11 @@ public class ModifierClientForm {
 		prenomclient = pPrenom;
 	}
 
-	public Date getNaissanceclient() {
+	public String getNaissanceclient() {
 		return naissanceclient;
 	}
 
-	public void setNaissanceclient(final Date pNaissance) {
+	public void setNaissanceclient(final String pNaissance) {
 		naissanceclient = pNaissance;
 	}
 

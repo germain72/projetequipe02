@@ -48,8 +48,8 @@
 						<td><c:out value="${partie.date}" /> <input type="text"
 							name="listeParties[${status.index}].date" value="${partie.date}" /><br>
 
-							<b><i><form:errors
-										path="listeParties[${status.index}].date" value="${partie.date}" /></i></b></td>
+						<b><i><form:errors
+							path="listeParties[${status.index}].date" value="${partie.date}" /></i></b></td>
 					</tr>
 				</c:forEach>
 			</tbody>

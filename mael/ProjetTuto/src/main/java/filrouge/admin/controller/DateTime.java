@@ -19,5 +19,19 @@ public class DateTime {
 		}
 		return ldate;
 	}
+	
+	static public String getStringFormat(Date pdate, String pattern) {
+		String ldate;
+		if (pattern.equals("")) {
+			pattern = "dd/MM/yyyy";
+		}
+		dateFormat = new SimpleDateFormat(pattern);
+		try {
+			ldate = dateFormat.format(pdate);
+		} catch (Exception ex) {
+			ldate = new String();
+		}
+		return ldate;
+	}
 
 }

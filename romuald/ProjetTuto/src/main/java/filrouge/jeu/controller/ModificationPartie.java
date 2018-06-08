@@ -1,6 +1,6 @@
 package filrouge.jeu.controller;
 
-import java.util.Date;
+import javax.validation.constraints.Pattern;
 
 import org.hibernate.validator.constraints.NotEmpty;
 
@@ -9,7 +9,8 @@ public class ModificationPartie {
 	private Integer idpartie;
 	private String nom;
 	@NotEmpty(message="{modification.partie.date.notempty")
-	private Date date;
+	@Pattern (regexp="(0?[1-9]|[12][0-9]|3[01])/(0?[1-9]|1[012])/((19|20)\\d\\d)")
+	private String date;
 	
 	public Integer getIdPartie () {
 		return idpartie;
@@ -26,11 +27,11 @@ public class ModificationPartie {
 		nom = pNom;
 	}
 	
-	public Date getDate () {
+	public String getDate () {
 		return date;
 	}
 	
-	public void setDate(final Date pDate) {
+	public void setDate(final String pDate) {
 		this.date=pDate;
 	}
 

@@ -11,10 +11,11 @@ import org.springframework.format.annotation.DateTimeFormat;
 public class CreerClientForm {
 	private String nom;
 	private String prenom;
+	@Valid
 	@NotEmpty(message = "")
-	@Pattern(regexp = "(0?[1-9]|[12][0-9]|3[01])/(0?[1-9]|1[012])/((19|20)\\d\\d)", message = "Format jj/mm/aaaa requis")
+	@Pattern(regexp = "(0?[1-9]|[12][0-9]|3[01])/(0?[1-9]|1[012])/((19|20)\\d\\d)", message = "Date jj/mm/aaaa requise")
 	private String naissance;
-	private String date = "31/12/1999";
+	private String date = DateTime.getStringFormat(new Date(),"");
 	@NotEmpty
 	private String pseudo;
 	@NotEmpty

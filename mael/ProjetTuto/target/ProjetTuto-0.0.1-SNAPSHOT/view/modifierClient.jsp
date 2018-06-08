@@ -36,7 +36,7 @@ pageEncoding="ISO-8859-1"%>
 								<b><i><form:errors path="listeClients[${status.index}].prenomclient" /></i></b>
 		                	</td>
 		                	<td>
-								<input type="text" name="listeClients[${status.index}].naissanceclient" value="${client.naissanceclient}"/><br/>
+								<input id="datepicker" type="text" name="listeClients[${status.index}].naissanceclient" value="${client.naissanceclient}"/><br/>
 								<b><i><form:errors path="listeClients[${status.index}].naissanceclient" /></i></b>
 		                	</td>
 		                	<td>
