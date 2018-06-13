@@ -15,5 +15,8 @@
 	<p>
 		Exception type:<br />${exception['class'].name}
 	</p>
+	<p>
+		${exception['class']}
+	</p>
 </body>
 </html>

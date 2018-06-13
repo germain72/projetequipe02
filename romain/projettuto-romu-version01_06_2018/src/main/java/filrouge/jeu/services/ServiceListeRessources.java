@@ -69,4 +69,10 @@ public class ServiceListeRessources implements IServiceListeRessources {
 		
 	}
 
+	public Ressources getRessourcesById(int id) {
+		// TODO Auto-generated method stub
+		
+		return dao.getRessourcesById(id);
+	}
+
 }

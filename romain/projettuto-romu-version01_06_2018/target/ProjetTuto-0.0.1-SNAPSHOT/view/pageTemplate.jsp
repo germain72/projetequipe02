@@ -2,6 +2,7 @@
 	isELIgnored="false" pageEncoding="ISO-8859-1"%>
 <%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <%@taglib uri="http://www.springframework.org/tags" prefix="spring"%>
+<%@taglib uri="http://tiles.apache.org/tags-tiles" prefix="tiles"%>
 <!-- Code construit pour bootstrap 3.3.7-dist -->
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
@@ -18,7 +19,7 @@
 	href="<c:url value="/resources/bootstrap/css/bootstrap.min.css" />"
 	rel="stylesheet">
 <!-- Chargement des feuilles theme css bootstrap aprais les css Bootstrap principal-->
-<link href="<c:url value="/resources/bootstraptheme/theme.min.3.css" />"
+<link href="<c:url value="/resources/bootstraptheme/theme.min.4.css" />"
 	rel="stylesheet">
 <!-- Chargement de mes feuilles css -->
 <!-- On charge toujour notre css pour surcharger les précédent -->
@@ -33,7 +34,8 @@
 </head>
 
 <body>
-	<nav class="navbar navbar-default m2i-navbar navbar-fixed-top">
+	<header> <nav
+		class="navbar navbar-default m2i-navbar navbar-fixed-top">
 	<div class="container-fluid">
 		<div class="navbar-header">
 
@@ -71,12 +73,17 @@
 				</ul></li>
 		</ul>
 	</div>
-	<!-- /.container-fluid --> </nav>
-
+	<!-- /.container-fluid --> </nav> </header>
 	<!-- Fin des balise de la barre de navigations %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
 	<!--<div class="m2i-body panel-body"><!-- -->
 	<main class="m2i-body panel-body">
-		<tiles:insertAttribute name="principal" />
+	<div class="row">
+		<div class="col-md-1"></div>
+		<div class="col-md-10">
+			<tiles:insertAttribute name="principal" />
+		</div>
+		<div class="col-md-1"></div>
+	</div>
 	</main>
 	<!-- </div><!-- -->
 
@@ -85,8 +92,7 @@
 	<div class="row">
 		<div class="col-md-12">
 			<p>copyright &#9400; 2017-2018 M2I</p>
-		</div>
-	</div>
+			<div class="col-md-12"></div>
 	</footer>
 </body>
 </html>

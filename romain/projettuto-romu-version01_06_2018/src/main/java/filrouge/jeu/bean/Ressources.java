@@ -58,6 +58,10 @@ public class Ressources  implements java.io.Serializable {
     public Integer getId() {
         return this.id;
     }
+     
+     public void setId(int id) {
+         this.id = new Integer( id);
+     }
     
     public void setId(Integer id) {
         this.id = id;

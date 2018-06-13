@@ -6,6 +6,9 @@ import filrouge.jeu.bean.Ressources;
 
 public interface IListeRessourcesDAO {
 
+
+	Ressources getRessourcesById(final int id);
+	
 	/*
 	 * Retourne la liste des ressources de la bbd
 	 */

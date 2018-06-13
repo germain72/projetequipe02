@@ -8,7 +8,7 @@ public interface IServiceListeRessources {
 
 	List<Ressources> listRessources();
 	
-//	Ressources getRessourcesById(final int id);
+	Ressources getRessourcesById(final int id);
 //
 //	Ressources getRessourcesByEnumType(final int id);
 	

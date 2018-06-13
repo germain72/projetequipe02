@@ -7,4 +7,13 @@
 		<put-attribute name="principal"
 			value="/view/listeRessources.jsp" />
 	</definition>
+	<definition name="creeRessources" template="/view/pageTemplate.jsp">
+		<put-attribute name="principal"
+			value="/view/creeRessources.jsp" />
+	</definition>
+
+	<definition name="creeRessourcesResult" template="/view/pageTemplate.jsp">
+		<put-attribute name="principal"
+			value="/view/creeRessourcesResult.jsp" />
+	</definition>
 </tiles-definitions>

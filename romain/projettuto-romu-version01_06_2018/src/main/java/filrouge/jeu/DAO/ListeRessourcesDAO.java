@@ -72,7 +72,7 @@ public class ListeRessourcesDAO implements IListeRessourcesDAO {
 		
 		// dRessources et l'entytée de la base de donnée
 		// nous obtenon cette entrée pour nous assuée que le entité existe biens
-		final Ressources dRessources = em.getReference(Ressources.class, pRessources);
+		final Ressources dRessources = em.getReference(Ressources.class, pRessources.getId());
 		em.remove(dRessources);
 	}
 
@@ -109,6 +109,12 @@ public class ListeRessourcesDAO implements IListeRessourcesDAO {
 			final String lSQL = lHQuery.getQueryString();
 			throw new RuntimeException("Nombre d'occurences (" + lRowCount + ") modifiés différent de 1 pour " + lSQL);
 		}
+	}
+
+	public Ressources getRessourcesById(int id) {
+		// TODO Auto-generated method stub
+		Ressources dRessources = em.getReference(Ressources.class,id);
+		return dRessources;
 	}
 
 }
