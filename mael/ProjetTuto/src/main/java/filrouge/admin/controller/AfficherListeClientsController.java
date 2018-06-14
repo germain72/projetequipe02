@@ -12,10 +12,11 @@ import filrouge.admin.bean.Client;
 import filrouge.admin.services.IListeClientsServices;
 
 @Controller
-@RequestMapping(value="/afficherListeClients")
+@RequestMapping(value = "/afficherListeClients")
 public class AfficherListeClientsController {
 	@Autowired
 	private IListeClientsServices service;
+
 	@RequestMapping(method = RequestMethod.GET)
 	public String afficher(ModelMap pModel) {
 		final List<Client> lListeClients = service.listeClients();
