@@ -37,12 +37,6 @@
 
 
 
-		<div class="col-lg-10 col-lg-offset-2">
-			<!-- <button class="btn btn-default">Cancel</button><!---->
-			<button type="submit" class="btn btn-primary">
-				<spring:message code="form.submit" />
-			</button>
-		</div>
 	<!-- </form:form><!--  -->
 </div>
 <div class="well">

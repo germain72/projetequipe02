@@ -16,4 +16,12 @@
 		<put-attribute name="principal"
 			value="/view/creeRessourcesResult.jsp" />
 	</definition>
+	<definition name="supprimerRessources" template="/view/pageTemplate.jsp">
+		<put-attribute name="principal"
+			value="/view/supprimerRessources.jsp" />
+	</definition>
+	<definition name="supprimerRessourcesResult" template="/view/pageTemplate.jsp">
+		<put-attribute name="principal"
+			value="/view/supprimerRessourcesResult.jsp" />
+	</definition>
 </tiles-definitions>

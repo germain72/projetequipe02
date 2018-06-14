@@ -28,4 +28,7 @@
 			</tbody>
 		</table>
 	</div>
+	<div>
+		${ressourcessup.id } ${ressourcessup.libebelle } ${ressourcessup.typeRessource }
+	</div>
 

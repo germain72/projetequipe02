@@ -80,8 +80,8 @@ public class ListeRessourcesDAO implements IListeRessourcesDAO {
 	 * (non-Javadoc)
 	 * @see filrouge.jeu.DAO.IListeRessourcesDAO#modifierRessources(filrouge.jeu.bean.Ressources)
 	 */
-	public void modifierRessources(Ressources pRessources) {
-
+	public void modifierRessources(final Ressources pRessources) {
+		
 		final CriteriaBuilder lCriteriaBuilder = em.getCriteriaBuilder();
 		
 		final CriteriaUpdate<Ressources> lCriteriaUpdate = lCriteriaBuilder.createCriteriaUpdate(Ressources.class);
@@ -94,11 +94,13 @@ public class ListeRessourcesDAO implements IListeRessourcesDAO {
 		
 		lCriteriaUpdate.where(lExpression);
 		
-		lCriteriaUpdate.set("LIBEBELLE", pRessources.getLibebelle());
+		// Ils faux pointez les champs du beam
+		//LIBEBELLE
+		lCriteriaUpdate.set("libebelle", pRessources.getLibebelle());
 		//Ressources.class.getMethod(getLibebelle, parameterTypes)
 		
-		// TODO De quelle donné s'agitile
-		lCriteriaUpdate.set("TYPE_RESSOURCE", pRessources.getTypeRessource());
+		// TYPE_RESSOURCE
+		lCriteriaUpdate.set("typeRessource", pRessources.getTypeRessource());
 		
 		final Query lQuery = em.createQuery(lCriteriaUpdate);
 		
@@ -113,7 +115,8 @@ public class ListeRessourcesDAO implements IListeRessourcesDAO {
 
 	public Ressources getRessourcesById(int id) {
 		// TODO Auto-generated method stub
-		Ressources dRessources = em.getReference(Ressources.class,id);
+		Ressources dRessources = em.find(Ressources.class,id); //getReference(Ressources.class,id);
+		
 		return dRessources;
 	}
 

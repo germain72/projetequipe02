@@ -64,15 +64,22 @@ public class ServiceListeRessources implements IServiceListeRessources {
 	public void modifierRessources(final List<Ressources> pRessources) {
 		// TODO Auto-generated method stub
 		for (Ressources ressources : pRessources) {
-			dao.supprimerRessources(ressources);
+			dao.modifierRessources(ressources);
 		}
 		
 	}
 
+	@Transactional()
 	public Ressources getRessourcesById(int id) {
 		// TODO Auto-generated method stub
 		
 		return dao.getRessourcesById(id);
+	}
+
+	@Transactional()
+	public void modifierRessource(Ressources pRessources) {
+		// TODO Auto-generated method stub
+		dao.modifierRessources(pRessources);
 	}
 
 }

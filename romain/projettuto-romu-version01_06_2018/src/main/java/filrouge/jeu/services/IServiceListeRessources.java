@@ -19,4 +19,6 @@ public interface IServiceListeRessources {
 	void supprimerRessources(final Ressources pRessources);
 	
 	void modifierRessources(final List<Ressources> pRessources);
+
+	void modifierRessource(Ressources mRessources);
 }

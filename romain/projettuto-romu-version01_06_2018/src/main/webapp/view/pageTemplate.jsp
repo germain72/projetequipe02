@@ -19,7 +19,7 @@
 	href="<c:url value="/resources/bootstrap/css/bootstrap.min.css" />"
 	rel="stylesheet">
 <!-- Chargement des feuilles theme css bootstrap aprais les css Bootstrap principal-->
-<link href="<c:url value="/resources/bootstraptheme/theme.min.4.css" />"
+<link href="<c:url value="/resources/bootstraptheme/theme.min.5.css" />"
 	rel="stylesheet">
 <!-- Chargement de mes feuilles css -->
 <!-- On charge toujour notre css pour surcharger les précédent -->

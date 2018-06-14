@@ -1,6 +1,6 @@
 package filrouge.jeu.controller;
 
-import javax.validation.constraints.Pattern;
+//import javax.validation.constraints.Pattern;
 import org.hibernate.validator.constraints.NotEmpty;
 
 public class CreeRessourcesForm {
