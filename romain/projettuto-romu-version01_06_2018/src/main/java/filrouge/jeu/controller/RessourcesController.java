@@ -53,8 +53,16 @@ public class RessourcesController {
 			// final Integer lIntQuantite = Integer.valueOf(pCreation.getQuantite());
 			service.creerRessources(pCreation.getLibelle(), 0);
 			final List<Ressources> lListeRessources = service.listRessources();
-			pModel.addAttribute("listeRessources", lListeRessources);
+			pModel.addAttribute("listeRessources", lListeRessources); 
+			
+			
+			// on vide les erreur
+			pModel.addAttribute("haserror", "");
 			return "creeRessourcesResult";
+		}
+		else
+		{
+			pModel.addAttribute("haserror", "has-error");
 		}
 		return cree(pModel);
 	}
@@ -62,7 +70,7 @@ public class RessourcesController {
 	// CreeRessources Fin
 
 	// CRUD D
-	// Supprimer ressource
+	// Supprimer ressource debut
 	@RequestMapping(value = "/afficherSupprimerRessource", method = RequestMethod.GET)
 	public String supprimer(ModelMap pModel) {
 		final List<Ressources> lListeRessources = service.listRessources();
@@ -72,34 +80,10 @@ public class RessourcesController {
 
 	@RequestMapping(value = "/supprimerActionRessource", method = RequestMethod.GET)
 	public String supprimer(@RequestParam(value = "idRessource") final Integer pIdRessource, ModelMap pModel) {
-		// final Ressources lRessources = lListeRessources.get(pIdRessource);
-		// System.out.println("0000");
-		// System.out.println(pIdRessource);
-		// Ressources ressources = service.getRessourcesById(pIdRessource);
-		// System.out.println(ressources.getId());
-		// System.out.println(ressources.getLibebelle());
-		// System.out.println(ressources.getTypeRessource());
-		// System.out.println("00000000000");
-		// Ressources rescopie = new Ressources();
-		// System.out.println(ressources);
-		// rescopie.setId(ressources.getId());
-		// rescopie.setLibebelle(ressources.getLibebelle());
-		// rescopie.setTypeRessource(ressources.getTypeRessource());
-		// System.out.println("0");
-		// pModel.addAttribute("ressourcessup", rescopie);
-		// service.supprimerRessources(ressources);
-		// System.out.println("1");
-		// final List<Ressources> lListeRessources = service.listRessources();
-		// System.out.println("2");
-		// pModel.addAttribute("listeRessources", lListeRessources);
-		// System.out.println("3");
 
 		Ressources sRessource = service.getRessourcesById(pIdRessource);
 
 		pModel.addAttribute("supRessources", sRessource);
-		// Ressources nRessources = new Ressources(ressource.getLibebelle() + "",
-		// ressource.getTypeRessource() + 0);
-		// nRessources.setId(ressource.getId() + 0);
 
 		service.supprimerRessources(sRessource);
 
@@ -108,6 +92,7 @@ public class RessourcesController {
 
 		return "supprimerRessourcesResult";
 	}
+	// Supprimer ressource Fin
 
 	// CRUD U
 	// Modification debut
@@ -142,11 +127,8 @@ public class RessourcesController {
 			final BindingResult pBindingResult,
 			ModelMap pModel) {
 
+		// recupére si le formulaire valide ou pas
 		if (!pBindingResult.hasErrors()) {
-			
-			
-//			Ressources mRessources = new Ressources(pLblRessource, pTypeRessource);
-//			mRessources.setId(pIdRessource);
 			Ressources mRessources = new Ressources(pModRessourcesForm.getLibelle(), pModRessourcesForm.getTypeRessource());
 			mRessources.setId(pModRessourcesForm.getId());
 			

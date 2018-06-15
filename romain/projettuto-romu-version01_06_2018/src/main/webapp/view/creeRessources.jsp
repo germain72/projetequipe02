@@ -23,20 +23,24 @@
 					<legend>
 						<spring:message code="form.legend.ressources" />
 					</legend>
-					<form:errors path="libelle">
-					<div class="has-error">
-					</form:errors>
-					<div class="form-group "> <!-- has-error has-warning has-success-->
+<%-- 					<form:errors path="libelle"> --%>
+<!-- 						<div class="has-error"> -->
+<%-- 					</form:errors> --%>
+					<spring:bind path="libelle" >
+<!-- 					<div class="form-group"> -->
+					<div class="form-group ${status.error ? 'has-error' : ''}">
+<!-- 					<div class="form-group "> has-error has-warning has-success -->
 						<label for="formLibelle" class="col-lg-2 control-label"><spring:message
-								code="form.lbl.ressources" /><form:errors path="libelle"><span> : </span></form:errors><form:errors path="libelle"/></label>
+								code="form.lbl.ressources" /><form:errors path="libelle" element="span"> : </form:errors><form:errors path="libelle"/></label>
 						<div class="col-lg-10">
 							<form:input path="libelle" id="formLibelle" cssClass="form-control"/>
 							<!-- <input type="text" id="formLibelle" name="formLibelle" class="form-control"/><!--  -->
 						</div>
 					</div>
-					<form:errors path="libelle">
-					</div>
-					</form:errors>
+					</spring:bind>
+<%-- 					<form:errors path="libelle"> --%>
+<!-- 					</div> -->
+<%-- 					</form:errors> --%>
 					<div class="form-group">
 						<div class="col-lg-10 col-lg-offset-2">
 							<!-- <button class="btn btn-default">Cancel</button><!---->
