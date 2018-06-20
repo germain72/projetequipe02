@@ -1,0 +1,15 @@
+package filrouge.admin.DAO;
+
+import java.util.List;
+
+import filrouge.admin.bean.Client;
+
+
+public interface IListeClientsDAO {
+	List<Client> listeClients();
+	boolean identifierClient(String pseudo, String mdp, boolean admin);
+	boolean identifierNouveauClient(String pseudo, boolean admin);
+	void creerClient(Client client);
+	void modifierClient(final Client client);
+	void supprimerClient(final Client client);
+}
